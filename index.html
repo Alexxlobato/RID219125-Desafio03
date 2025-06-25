@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BRA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="/script.js" ></script>
+    
+    <title>Board de Tarefas</title>
+</head>
+<body>
+    <div class="container">
+        
+        <h1>Board de Tarefas</h1>
+
+        <section class="input-area">
+            <input id="inputTarefa" type="text" placeholder="Nome da Tarefa" aria-label="Nome da Tarefa">
+            <input  id="inputEtiqueta" type="text" placeholder="Etiqueta" aria-label="Etiqueta da Tarefa">
+            <button id="botao" onclick="adicionarTarefa(); adicionarEtiqueta()" type="button" aria-label="Adicionar Tarefa">+</button>
+        </section>
+        
+        <div class="tasks-container">
+            <ul></ul>
+        </div>
+               
+        <section class="footer-line">
+          <h3><span id="contador">0</span> Tarefas concluídas</h3>
+        </section>
+
+    </div>
+    
+   
+</body>
+</html>
